@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('about.css');
+@import url('menu.css');
+@import url('menukids.css');
+@import url('testimonials.css');
+@import url('footer.css');
+@import url('modal.css');
+
+:root {
+    --color-primary: #ADD9D1;
+    --color-secondary: #BF6836;
+    --color-terciary: #590202;
+    --color-quaternary: #D94A4A;
+    --color-quintenary: #F2A7A7;
+
+    --color-shadow-primary: #5F9E95;
+    --color-shadow-secondary: #7A3E1F;
+    --color-shadow-terciary: #290000;
+    --color-shadow-quaternary: #8E2F2F;
+    --color-shadow-quintenary: #C98E8E;
+
+    --light-color: white;
+    --gray-color: gray;
+    --dark-color: black;
+
+    --small-text: 8px;
+    --medium-text: calc(var(--small-text) * 1.61);
+    --large-text: calc(var(--medium-text) * 1.61);
+
+    --small-margin: 8px;
+    --medium-margin: calc(var(--small-margin) * 1.61);
+    --large-margin: calc(var(--medium-margin) * 1.61);
+
+    --small-padding: 8px;
+    --medium-padding: calc(var(--small-padding) * 1.61);
+    --large-padding: calc(var(--medium-padding) * 1.61);
+
+    --arround-radius: 0.5rem;
+    --circle-radius: 1rem;
+
+    --small-title: 20px;
+    --medium-title: 40px;
+    --large-title: 80px;
+
+    --small-text: 12px;
+    --medium-text: 24px;
+    --large-text: 48px;
+
+    --confetti-count: 10;
+    /* Número de confetes */
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--dark-color);
+    background: white;
+    /* height: 700vh; */
+}
