@@ -1,7 +1,7 @@
 // EventListener's Front
 
 window.addEventListener('scroll', function () {
-    let header = document.getElementsByClassName('main-header');
+    let header = document.querySelector('.main-header');
 
     if (window.scrollY > 100) {
         header.classList.add('sticky');

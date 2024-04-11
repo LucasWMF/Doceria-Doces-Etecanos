@@ -10,9 +10,9 @@
 }
 
 .sticky {
-    /* box-shadow: 0px 8px 10px var(--color-shadow-primary); */
     background: transparent;
-    backdrop-filter: blur(2rem);
+    box-shadow: 1rem 0 5rem var(--dark-color);
+    backdrop-filter: blur(1rem);
 }
 
 .group-items {
