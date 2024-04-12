@@ -4,6 +4,7 @@
     position: sticky;
     height: 8vh;
     top: 0;
+    width: 100vw;
     z-index: 1000;
     background: var(--color-primary);
     transition: all 1s ease;
@@ -106,4 +107,100 @@
 
 #mobile_menu {
     display: none;
+}
+
+/* Mobile menu */
+
+/* Adiciona o ícone de hamburguer para o menu móvel */
+#mobile_menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#mobile_menu button {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estiliza o ícone de hamburguer */
+#mobile_menu button .hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Adiciona a animação para o ícone de hamburguer */
+#mobile_menu button .hamburger-icon::before,
+#mobile_menu button .hamburger-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Posiciona as linhas do ícone de hamburguer */
+#mobile_menu button .hamburger-icon::before {
+    top: -10px;
+}
+
+#mobile_menu button .hamburger-icon::after {
+    top: 10px;
+}
+
+/* Animação para transformar o ícone de hamburguer em X */
+#mobile_menu.active button .hamburger-icon {
+    background-color: transparent;
+}
+
+#mobile_menu.active button .hamburger-icon::before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#mobile_menu.active button .hamburger-icon::after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Estilos para telas pequenas (celulares) */
+@media only screen and (max-width: 600px) {
+    .main-header {
+        padding: var(--small-padding) 8%;
+    }
+
+    .group-items {
+        gap: 2rem;
+    }
+
+    .contact-button {
+        padding: var(--extra-small-padding);
+    }
+
+    .user-profile {
+        padding: var(--extra-small-padding);
+    }
+
+    .user-profile i{
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilos para telas médias (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .main-header {
+        padding: var(--medium-padding) 8%;
+    }
+}
+
+/* Estilos para telas grandes (desktops) */
+@media only screen and (min-width: 1025px) {
+    .main-header {
+        padding: var(--large-padding) 8%;
+    }
 }
