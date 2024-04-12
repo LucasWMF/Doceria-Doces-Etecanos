@@ -108,3 +108,31 @@
     top: 50%;
     left: 20%;
 } */
+
+/* terminar a responsividade */
+@media(max-widht: 767px){
+    
+.social-media-buttons{
+        width: 50%;
+        margin-bottom: 30px;
+        
+    }
+
+}
+
+@media(max-widht: 767px){
+    
+.social-media-buttons{
+        width: 50%;
+        margin-bottom: 30px;
+}
+
+}
+
+@media(max-widht: 574px){
+    
+.social-media-buttons{
+        width: 100%;
+}
+
+}
