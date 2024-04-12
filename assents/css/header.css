@@ -4,8 +4,8 @@
     position: sticky;
     height: 8vh;
     top: 0;
-    width: 100vw;
-    z-index: 100000;
+    width: 100%;
+    z-index: 1000;
     background: var(--color-primary);
     transition: background 1s ease, backdrop 1s ease, box-shadow 1s ease;
 }
