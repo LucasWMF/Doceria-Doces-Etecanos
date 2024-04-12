@@ -33,6 +33,7 @@
 
 .home-text {
     margin-top: 1rem;
+    /* font-size: 4vh; */
     font-size: var(--medium-text);
 }
 
