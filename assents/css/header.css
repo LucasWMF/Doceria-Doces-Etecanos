@@ -170,25 +170,91 @@
 
 /* Estilos para telas pequenas (celulares) */
 @media only screen and (max-width: 600px) {
-    .main-header {
-        padding: var(--small-padding) 8%;
+    .desktop-menu {
+        display: none; /* Oculta o menu de navegação para desktop */
     }
 
-    .group-items {
-        gap: 2rem;
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 
-    .contact-button {
-        padding: var(--extra-small-padding);
+    .mobile-menu-list {
+        display: none; /* Oculta a lista de itens do menu de navegação móvel */
     }
 
-    .user-profile {
-        padding: var(--extra-small-padding);
+    .mobile-menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
-    .user-profile i{
-        font-size: 1.2rem;
+    .mobile-menu-toggle .hamburger-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        position: relative;
+        transition: all 0.3s ease-in-out;
     }
+
+    .mobile-menu-toggle .hamburger-icon::before,
+    .mobile-menu-toggle .hamburger-icon::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-menu-toggle .hamburger-icon::before {
+        top: -10px;
+    }
+
+    .mobile-menu-toggle .hamburger-icon::after {
+        top: 10px;
+    }
+
+    .mobile-menu-toggle.mobileon .hamburger-icon {
+        background-color: transparent;
+    }
+
+    .mobile-menu-toggle.mobileon .hamburger-icon::before {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .mobile-menu-toggle.mobileon .hamburger-icon::after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    /* Exibe a lista de itens do menu de navegação móvel quando o botão de hambúrguer é clicado */
+    .mobile-menu-toggle.mobileon + .mobile-menu-list {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-primary); /* Adapte a cor de fundo conforme necessário */
+        position: absolute;
+        top: 100%; /* Ajuste conforme necessário */
+        right: 0;
+        width: 100%; /* Ajuste conforme necessário */
+        padding: 20px; /* Ajuste conforme necessário */
+    }
+
+    /* Estilize os itens do menu de navegação móvel conforme necessário */
+    .mobile-menu-toggle.mobileon + .mobile-menu-list .nav-item {
+        margin-bottom: 10px; /* Ajuste conforme necessário */
+    }
+
+    .mobile-menu-toggle.mobileon + .mobile-menu-list .nav-item a {
+        color: #fff; /* Ajuste conforme necessário */
+        text-decoration: none;
+        font-size: 18px; /* Ajuste conforme necessário */
+    }
+
+    /* Adapte estilos conforme necessário para melhorar a aparência e a usabilidade do menu de navegação móvel */
 }
 
 /* Estilos para telas médias (tablets) */

@@ -57,8 +57,13 @@
             </span>
         </nav>
 
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
+        <button id="mobile_menu_toggle" aria-label="Menu" class="mobile-menu-toggle">
+            <span class="hamburger-icon"></span>
+        </button>
+
+        <!-- Menu Mobile -->
+        <div id="mobile_menu" class="mobile-menu">
+            <ul id="mobile_nav_list" class="mobile-menu-list">
                 <li class="nav-item activemobile">
                     <a href="index.html">Início</a>
                 </li>
@@ -71,11 +76,10 @@
                 <li class="nav-item">
                     <a href="#reviews">Avaliações</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#location">Localização</a>
+                </li>
             </ul>
-
-            <button class="btn-default">
-                Peça aqui
-            </button>
         </div>
     </header>
 
