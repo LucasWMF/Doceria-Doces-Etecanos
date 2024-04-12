@@ -39,4 +39,27 @@ document.addEventListener("submit", function (event) {
     }
 });
 
-// Variáveis Function
+// Função para controlar o toggle do menu mobile
+document.getElementById("mobile_menu_toggle").addEventListener("click", function() {
+    let mobileMenu = document.getElementById("mobile_menu");
+    if (mobileMenu.style.display === "block") {
+        mobileMenu.style.display = "none";
+    } else {
+        mobileMenu.style.display = "block";
+    }
+    
+    // Selecionando o ícone dentro do botão
+    const menuIcon = this.querySelector(".hamburger-icon");
+
+    // Alternando entre as classes active e inactive para animar o ícone
+    this.classList.toggle("active");
+
+    // Verificando se o botão está ativo ou inativo para alternar entre os ícones
+    if (this.classList.contains("active")) {
+        // Se estiver ativo, troque o ícone para X
+        menuIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    } else {
+        // Se estiver inativo, troque o ícone para o ícone original de barras
+        menuIcon.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+});

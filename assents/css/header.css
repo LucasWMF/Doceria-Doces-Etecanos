@@ -37,28 +37,6 @@
     transform: scale(1.01);
 }
 
-.user-profile {
-    width: 3rem;
-    height: 3rem;
-    padding: var(--small-padding);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-}
-
-.user-profile i{
-    color: var(--color-primary);
-    font-size: 1.5rem;
-}
-
-.user-profile button:hover > i:hover{
-    color: var(--color-shadow-primary);
-}
-
 #navbar {
     display: flex;
     height: 100%;
@@ -109,101 +87,69 @@
     display: none;
 }
 
-/* Estilos para telas pequenas (celulares) */
-/* @media screen and (max-width: 600px) {
-    .desktop-menu {
-        display: none;
+@media screen and (max-width: 600px) {
+    #nav_list {
+        display: none; /* Oculta o navbar list normal */
     }
 
-    .mobile-menu {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+    #mobile_menu {
+        display: none; /* Oculta o menu mobile por padrão */
     }
 
-    .mobile-menu-list {
-        display: none; 
-    }
-
-    .mobile-menu-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: none;
+    .mobile_menu_toggle button{
+        outline: none;
         border: none;
-        cursor: pointer;
+        background: transparent;
     }
 
-    .mobile-menu-toggle .hamburger-icon {
+    /* Estilos para o ícone do menu hamburger */
+    .hamburger-icon {
         width: 30px;
-        height: 3px;
-        background-color: #fff;
+        height: 2px;
+        background-color: black;
+        display: block;
         position: relative;
-        transition: all 0.3s ease-in-out;
     }
 
-    .mobile-menu-toggle .hamburger-icon::before,
-    .mobile-menu-toggle .hamburger-icon::after {
-        content: '';
-        position: absolute;
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+        content: "";
         width: 30px;
-        height: 3px;
-        background-color: #fff;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .mobile-menu-toggle .hamburger-icon::before {
-        top: -10px;
-    }
-
-    .mobile-menu-toggle .hamburger-icon::after {
-        top: 10px;
-    }
-
-    .mobile-menu-toggle.mobileon .hamburger-icon {
-        background-color: transparent;
-    }
-
-    .mobile-menu-toggle.mobileon .hamburger-icon::before {
-        transform: translateY(10px) rotate(45deg);
-    }
-
-    .mobile-menu-toggle.mobileon .hamburger-icon::after {
-        transform: translateY(-10px) rotate(-45deg);
-    }
-
-    .mobile-menu-toggle.mobileon + .mobile-menu-list {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--color-primary);
+        height: 2px;
+        background-color: black;
         position: absolute;
-        top: 100%; 
-        right: 0;
-        width: 100%; 
-        padding: 20px;
+        transition: transform 0.3s ease;
     }
 
-    .mobile-menu-toggle.mobileon + .mobile-menu-list .nav-item {
-        margin-bottom: 10px;
+    .hamburger-icon::before {
+        top: -8px;
     }
 
-    .mobile-menu-toggle.mobileon + .mobile-menu-list .nav-item a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
+    .hamburger-icon::after {
+        top: 8px;
     }
-} */
 
-/* Estilos para telas médias (tablets) */
-/* @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .main-header {
-        padding: var(--medium-padding) 8%;
+    /* Animação para transformar o ícone em X */
+    .mobile-menu-toggle.active .hamburger-icon::before {
+        transform: rotate(45deg) translate(5px, 0);
     }
-} */
 
-/* Estilos para telas grandes (desktops) */
-/* @media screen and (min-width: 1025px) {
-    .main-header {
-        padding: var(--large-padding) 8%;
+    .mobile-menu-toggle.active .hamburger-icon::after {
+        transform: rotate(-45deg) translate(5px, 0);
     }
-} */
+
+    /* Estilos para os botões de menu */
+    .mobile-menu-list .nav-item {
+        width: 100%; /* Largura total */
+        background-color: rgba(0, 0, 0, 0.9); /* Fundo semi-transparente */
+        margin: 5px 0; /* Espaçamento entre os botões */
+    }
+
+    .mobile-menu-list .nav-item a {
+        display: block;
+        padding: 10px; /* Espaçamento interno */
+        color: white; /* Cor do texto */
+        text-align: center; /* Alinhamento do texto */
+        text-decoration: none; /* Remover sublinhado */
+    }
+}
