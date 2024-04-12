@@ -39,18 +39,4 @@ document.addEventListener("submit", function (event) {
     }
 });
 
-
-document.getElementById('user-access').addEventListener("click", () => {
-    abrirModal();
-});
-
-document.getElementById('exit-modal').addEventListener("click", () => {
-    fecharModal();
-});
-
-document.getElementsByClassName('container-modal').addEventListener("click", () => {
-    fecharModal();
-});
-
-
 // Variáveis Function
