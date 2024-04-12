@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 24px;
+    grid-column: 1rem;
     margin: 32px;
     padding: 10%}
 
@@ -27,7 +28,12 @@
     border-radius: 20px;
     margin: 10px;
     gap: 25px;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 50%;
+    height: 50vh;
+>>>>>>> 26c405f8f852a9c9902aebe1baaa660418236dc3
     padding: 20px;
     background-color: var(--color-neutral-0);
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
@@ -47,11 +53,6 @@
     color: aquamarine;
 }
 
-.dish-price {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
 @media screen and (max-width: 1170px) {
     #dishes {
