@@ -8,9 +8,11 @@
     <title>Doces Etecanos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./assents/css/style.css">
-    
+
     <!-- links footer -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assents/css/footer.css">
 </head>
 
@@ -29,7 +31,7 @@
             -->
 
             <ul id="nav_list">
-                <li class="nav-item activemobile">
+                <li class="nav-item">
                     <a href="index.html">Início</a>
                 </li>
                 <li class="nav-item">
@@ -54,10 +56,16 @@
                 </button>
             </span>
         </nav>
+    </header>
 
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item activemobile">
+    <!-- <button id="mobile_menu_toggle" aria-label="Menu" class="mobile-menu-toggle">
+            <span class="hamburger-icon"></span>
+        </button> -->
+
+    <!-- Menu Mobile -->
+    <!-- <div id="mobile_menu" class="mobile-menu">
+            <ul id="mobile_nav_list" class="mobile-menu-list">
+                <li class="nav-item">
                     <a href="index.html">Início</a>
                 </li>
                 <li class="nav-item">
@@ -69,13 +77,11 @@
                 <li class="nav-item">
                     <a href="#reviews">Avaliações</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#location">Localização</a>
+                </li>
             </ul>
-
-            <button class="btn-default">
-                Peça aqui
-            </button>
-        </div>
-    </header>
+        </div> -->
 
     <!-- Home Section -->
     <!--
@@ -86,10 +92,17 @@
     A seção inicial é a página principal do site, fornecendo uma visão geral de seu conteúdo e navegação para outras seções importantes.
     -->
 
-    <section id="home" class="active">
+    <section id="home">
         <main class="main-home">
             <h1 class="home-title">Bem Vindo a Loja Doces Etecanos</h1>
+<<<<<<< HEAD
             <p class="home-text">Os doces etecanos são verdadeiras obras-primas culinárias, preparadas com ingredientes raros colhidos em campos mágicos e coletados em florestas encantadas. Cada doce é uma mistura cuidadosamente equilibrada de sabores exóticos e texturas divinas, capazes de levar qualquer pessoa a uma jornada sensorial inesquecível.</p>
+=======
+            <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere temporibus
+                dignissimos
+                ipsam molestiae alias praesentium earum! Molestiae non, maxime accusamus iste, rem, adipisci quasi
+                minima placeat error quidem fugit fuga?</p>
+>>>>>>> 84bc022de2aab0e2409ff5cd57a3d26fc78aa3a6
 
             <div class="info-buttons">
                 <div class="container-buttons">
@@ -160,7 +173,20 @@
     -->
 
     <section id="about">
-        <!-- adicione todo o conteúdo de about aqui dentro, não crie outras seções com o id=about fora daqui -->
+        <div class="containter-about">
+            <div class="header-about">
+                <h1 class="tilte-about">Sobre a Loja</h1>
+                <p class="text-about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque ipsa tenetur
+                    consequuntur sapiente odio repellat obcaecati suscipit quo, officiis sit quaerat eum, error
+                    laboriosam eligendi placeat ad aliquam corrupti. </p>
+            </div>
+
+            <div class="image-about">
+                <img src="./assents/image/Doces Etecanos.png" alt="" class="iab">
+            </div>
+
+        </div>
     </section>
 
     <!-- Kids Menu Section -->
@@ -175,329 +201,313 @@
     <section id="menu">
         <h1 class="section-title">Cardápio</h1>
 
-                <div id="dishes">
+        <div id="dishes">
+            <div class="dish">
+                <img src="./assents/image/menu/bolo_de_cenoura_no_pote-removebg-preview.png" class="image" alt="">
 
-                    <!-- part1 -->
-                    <div class="dish">
-                        <img src="./assents/image/menu/bolo_de_cenoura_no_pote-removebg-preview.png" class="image" alt="">
+                <h3 class="dish-title">
+                    Bolo de Cenoura no pote
+                </h3>
 
-                        <h3 class="dish-title">
-                            Bolo de Cenoura no pote
-                        </h3>
-
-                        <div class="Estrelas-avaliação">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
-                        <div class="dish-price">
-                            <h4>Saiba mais</h4>
-                        </div>
-                    </div>
-
-                    <div class="dish">
-                        <img src="./assents/image/menu/cone_de_ninho_com_nutella-removebg-preview.png" class="image" alt="">
-
-                        <h3 class="dish-title">
-                            Cone de ninho com nuttela
-                        </h3>
-
-                        <div class="Estrelas-avaliação">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
-                        <div class="dish-price">
-                            <h4>Saiba mais</h4>
-
-                        </div>
-                    </div>
-
-                    <div class="dish">
-                        <img src="./assents/image/menu/brownie-removebg-preview.png" class="image" alt="">
-
-                        <h3 class="dish-title">
-                            Brownie Tradicional
-                        </h3>
-
-                        <div class="Estrelas-avaliação">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
-                        <div class="dish-price">
-                            <h4>Saiba mais</h4>
-                        </div>
-                    </div>
-
-                    <div class="dish">
-                        <img src="./assents/image/menu/cupcake-removebg-preview.png" class="image" alt="">
-
-                        <h3 class="dish-title">
-                            Cupcake Chocolate com morango
-                        </h3>
-
-                        <div class="Estrelas-avaliação">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
-                        <div class="dish-price">
-                            <h4>Saiba mais</h4>
-                        </div>
-                    </div>
-
-                    <div class="dish">
-                        <img src="./assents/image/menu/rosquinha-removebg-preview.png" class="image" alt="">
-
-                        <h3 class="dish-title">
-                            Rosquinha tradicional
-                        </h3>
-
-                        <div class="Estrelas-avaliação">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-
-                        <div class="dish-price">
-                                <h4>Saiba mais</h4>
-                        </div>
-                    </div>
-                </div>
-            <!-- part1-->
-
-        <!-- part2 -->
-            
-                <div class="dish">
-
-                    <img src="./assents/image/menu/brigadeiro_de_uva-removebg-preview.png" class="image" alt="">
-
-                    <h3 class="dish-title">
-                        Brigadeiro com uva
-                    </h3>
-
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-                    </div>
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
 
-                <div class="dish">
-                    <img src="./assents/image/menu/esse_brigadeiro-removebg-preview.png" class="image" alt="">
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
 
-                    <h3 class="dish-title">
-                        Brigadeiro Tradicional
-                    </h3>
+            <div class="dish">
+                <img src="./assents/image/menu/cone_de_ninho_com_nutella-removebg-preview.png" class="image" alt="">
 
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+                <h3 class="dish-title">
+                    Cone de ninho com nuttela
+                </h3>
 
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-
-                    </div>
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
 
-                <div class="dish">
-                    <img src="./assents/image/menu/macarrons-removebg-preview.png" class="image" alt="">
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
 
-                    <h3 class="dish-title">
-                        Macarrons de Chocolate
-                    </h3>
+                </div>
+            </div>
 
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+            <div class="dish">
+                <img src="./assents/image/menu/brownie-removebg-preview.png" class="image" alt="">
 
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-                    </div>
+                <h3 class="dish-title">
+                    Brownie Tradicional
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
 
-                <div class="dish">
-                    <img src="./assents/image/menu/ovo_d_eniho_com_nuttela-removebg-preview.png" class="image" alt="">
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
 
-                    <h3 class="dish-title">
-                        Ovo de Pascoa ninho com nutella
-                    </h3>
+            <div class="dish">
+                <img src="./assents/image/menu/cupcake-removebg-preview.png" class="image" alt="">
 
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+                <h3 class="dish-title">
+                    Cupcake Chocolate com morango
+                </h3>
 
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-                    </div>
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
 
-                <div class="dish">
-                    <img src="./assents/image/menu/torta_de_morango-removebg-preview.png" class="image" alt="">
-
-                    <h3 class="dish-title">
-                        Torta de Morango
-                    </h3>
-
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-                    </div>
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
                 </div>
-        <!-- fim part2 -->
+            </div>
 
-    
-            
+            <div class="dish">
+                <img src="./assents/image/menu/rosquinha-removebg-preview.png" class="image" alt="">
 
-                <!-- part3 -->
-                <div class="dish">
-                    <img src="./assents/image/menu/ovo_de_brigadeiro-removebg-preview.png" class="image" alt="">
+                <h3 class="dish-title">
+                    Rosquinha tradicional
+                </h3>
 
-                    <h3 class="dish-title">
-                        Ovo de Páscoa brigadeiro
-                    </h3>
-
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-                    </div>
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
 
-                <div class="dish">
-                    <img src="./assents/image/menu/pudim-removebg-preview.png" class="image" alt="">
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
 
-                    <h3 class="dish-title">
-                        Pudim Tradicional
-                    </h3>
+            <div class="dish">
 
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+                <img src="./assents/image/menu/brigadeiro_de_uva-removebg-preview.png" class="image" alt="">
 
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
+                <h3 class="dish-title">
+                    Brigadeiro com uva
+                </h3>
 
-                    </div>
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
                 </div>
 
-                <div class="dish">
-                    <img src="./assents/image/menu/pão_de_mel-removebg-preview.png" class="image" alt="">
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
 
-                    <h3 class="dish-title">
-                        Pão de mel Tradicional
-                    </h3>
+            <div class="dish">
+                <img src="./assents/image/menu/esse_brigadeiro-removebg-preview.png" class="image" alt="">
 
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+                <h3 class="dish-title">
+                    Brigadeiro Tradicional
+                </h3>
 
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-                    </div>
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
 
-                <div class="dish">
-                    <img src="./assents/image/menu/sonho-removebg-preview.png" class="image" alt="">
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
 
-                    <h3 class="dish-title">
-                        Sonho Tradicional
-                    </h3>
+                </div>
+            </div>
 
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+            <div class="dish">
+                <img src="./assents/image/menu/macarrons-removebg-preview.png" class="image" alt="">
 
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-                    </div>
+                <h3 class="dish-title">
+                    Macarrons de Chocolate
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
 
-                <div class="dish">
-                    <img src="./assents/image/menu/torta_de_limão-removebg-preview.png" class="image" alt="">
-
-                    <h3 class="dish-title">
-                        Torta de Limão
-                    </h3>
-
-                    <div class="Estrelas-avaliação">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>Saiba mais</h4>
-                    </div>
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
                 </div>
-    </section>
+            </div>
 
-    <!-- Menu Kids Section -->
-    <!-- Seção Cardápio Infatil -->
+            <div class="dish">
+                <img src="./assents/image/menu/ovo_d_eniho_com_nuttela-removebg-preview.png" class="image" alt="">
 
-    <section id="menu-kids">
-        <!-- adicione todo o conteúdo de menukids aqui dentro, não crie outras seções com o id=menukids fora daqui -->
+                <h3 class="dish-title">
+                    Ovo de Pascoa ninho com nutella
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="./assents/image/menu/torta_de_morango-removebg-preview.png" class="image" alt="">
+
+                <h3 class="dish-title">
+                    Torta de Morango
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="./assents/image/menu/ovo_de_brigadeiro-removebg-preview.png" class="image" alt="">
+
+                <h3 class="dish-title">
+                    Ovo de Páscoa brigadeiro
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="./assents/image/menu/pudim-removebg-preview.png" class="image" alt="">
+
+                <h3 class="dish-title">
+                    Pudim Tradicional
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="./assents/image/menu/pão_de_mel-removebg-preview.png" class="image" alt="">
+
+                <h3 class="dish-title">
+                    Pão de mel Tradicional
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="./assents/image/menu/sonho-removebg-preview.png" class="image" alt="">
+
+                <h3 class="dish-title">
+                    Sonho Tradicional
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
+
+            <div class="dish">
+                <img src="./assents/image/menu/torta_de_limão-removebg-preview.png" class="image" alt="">
+
+                <h3 class="dish-title">
+                    Torta de Limão
+                </h3>
+
+                <div class="Estrelas-avaliação">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div class="dish-price">
+                    <h4>Saiba mais</h4>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <!-- Reviews Section -->
@@ -522,73 +532,59 @@
     A seção do rodapé contém links e informações na parte inferior da página.
     -->
 
-    <!-- <footer class="main-footer"> -->
+    <footer class="main-footer">
         <footer class="footer">
             <div class="container">
                 <div class="row">
-    
+
                     <div class="footer-col">
                         <h4>Proprietária</h4>
                         <ul>
-                                <li><a href="#">Ingrid Ribeiro</a></li> 
-                                
+                            <li><a href="#">Ingrid Ribeiro</a></li>
+
                         </ul>
                     </div>
-                
+
                     <div class="footer-col">
                         <h4>Desenvolvedores</h4>
                         <ul>
-                            <li><a href="#">Aila Aryam Alves</a></li> 
-                            <li><a href="#">Lucas Wagner</a></li> 
-                            <li><a href="#">Maria Carolina Almeida</a></li> 
-                            
+                            <li><a href="#">Aila Aryam Alves</a></li>
+                            <li><a href="#">Lucas Wagner</a></li>
+                            <li><a href="#">Maria Carolina Almeida</a></li>
+
                         </ul>
                     </div>
 
                     <div class="footer-col">
                         <h4>Localização</h4>
                         <ul>
-                            <li><a href="#">B. Guedes, Prç. Adelaide Guedes, 1 - Centro, Tatuí - SP, 18270-020</a></li> 
-                            
-                        </ul>                                 
+                            <li><a href="#">B. Guedes, Prç. Adelaide Guedes, 1 - Centro, Tatuí - SP, 18270-020</a>
+                            </li>
+
+                        </ul>
                     </div>
                     <div class="footer-col">
                         <h4>Horário de funcionmento</h4>
                         <ul>
-                            <li><a href="#">Quartas-feiras, das 07:00 à meia-noite</a></li> 
-                            
-                        </ul>                                 
+                            <li><a href="#">
+                            <li>Quinta a Terça-Feira das 7h as meia noite.</li>
+                            </a>
+                            <li><a href="#">
+                            <li>Fechado nas Quartas-Feiras.</li>
+                            </a>
+                        </ul>
                     </div>
-                        <!-- <div class="copy">
+                    <!-- <div class="copy">
                             &#169; 2024
                         </div> -->
-                            
-                        </div>
-                    </div>
+
                 </div>
             </div>
-    </footer>
+            </div>
+            </div>
+        </footer>
 
-    <!-- Modal Screens -->
-    <!--
-    English:
-    Modal screens are temporary windows that overlay the main content to display additional information or functionality.
-
-    Português (Brasil):
-    Telas modais são janelas temporárias que sobrepoem o conteúdo principal para exibir informações ou funcionalidades adicionais.
-    -->
-
-    <div class="container-modal">
-        <div id="fade">
-            <div id="modal-login"></div>
-            <div id="modal-registred"></div>
-            <div id="modal-user"></div>
-            <div id="modal-reviews"></div>
-            <div id="modal-database"></div>
-        </div>
-    </div>
-
-    <!--
+        <!--
     Inglês:
     This script contains the main functionality of the application.
 
@@ -596,7 +592,7 @@
     Este script contém a funcionalidade principal da aplicação.
     -->
 
-    <script src="./assents/JavaScript/main.js"></script>
+        <script src="./assents/JavaScript/main.js"></script>
 </body>
 
 </html>

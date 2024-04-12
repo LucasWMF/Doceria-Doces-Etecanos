@@ -4,9 +4,10 @@
     position: sticky;
     height: 8vh;
     top: 0;
-    z-index: 1000;
+    width: 100vw;
+    z-index: 100000;
     background: var(--color-primary);
-    transition: all 1s ease;
+    transition: background 1s ease, backdrop 1s ease, box-shadow 1s ease;
 }
 
 .sticky {
@@ -107,3 +108,102 @@
 #mobile_menu {
     display: none;
 }
+
+/* Estilos para telas pequenas (celulares) */
+/* @media screen and (max-width: 600px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .mobile-menu-list {
+        display: none; 
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle .hamburger-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-menu-toggle .hamburger-icon::before,
+    .mobile-menu-toggle .hamburger-icon::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-menu-toggle .hamburger-icon::before {
+        top: -10px;
+    }
+
+    .mobile-menu-toggle .hamburger-icon::after {
+        top: 10px;
+    }
+
+    .mobile-menu-toggle.mobileon .hamburger-icon {
+        background-color: transparent;
+    }
+
+    .mobile-menu-toggle.mobileon .hamburger-icon::before {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .mobile-menu-toggle.mobileon .hamburger-icon::after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .mobile-menu-toggle.mobileon + .mobile-menu-list {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-primary);
+        position: absolute;
+        top: 100%; 
+        right: 0;
+        width: 100%; 
+        padding: 20px;
+    }
+
+    .mobile-menu-toggle.mobileon + .mobile-menu-list .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .mobile-menu-toggle.mobileon + .mobile-menu-list .nav-item a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+} */
+
+/* Estilos para telas médias (tablets) */
+/* @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .main-header {
+        padding: var(--medium-padding) 8%;
+    }
+} */
+
+/* Estilos para telas grandes (desktops) */
+/* @media screen and (min-width: 1025px) {
+    .main-header {
+        padding: var(--large-padding) 8%;
+    }
+} */
