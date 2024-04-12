@@ -31,7 +31,7 @@
             -->
 
             <ul id="nav_list">
-                <li class="nav-item activemobile">
+                <li class="nav-item">
                     <a href="index.html">Início</a>
                 </li>
                 <li class="nav-item">
@@ -56,15 +56,16 @@
                 </button>
             </span>
         </nav>
+    </header>
 
-        <button id="mobile_menu_toggle" aria-label="Menu" class="mobile-menu-toggle">
+    <!-- <button id="mobile_menu_toggle" aria-label="Menu" class="mobile-menu-toggle">
             <span class="hamburger-icon"></span>
-        </button>
+        </button> -->
 
-        <!-- Menu Mobile -->
-        <div id="mobile_menu" class="mobile-menu">
+    <!-- Menu Mobile -->
+    <!-- <div id="mobile_menu" class="mobile-menu">
             <ul id="mobile_nav_list" class="mobile-menu-list">
-                <li class="nav-item activemobile">
+                <li class="nav-item">
                     <a href="index.html">Início</a>
                 </li>
                 <li class="nav-item">
@@ -80,8 +81,7 @@
                     <a href="#location">Localização</a>
                 </li>
             </ul>
-        </div>
-    </header>
+        </div> -->
 
     <!-- Home Section -->
     <!--
@@ -92,10 +92,11 @@
     A seção inicial é a página principal do site, fornecendo uma visão geral de seu conteúdo e navegação para outras seções importantes.
     -->
 
-    <section id="home" class="active">
+    <section id="home">
         <main class="main-home">
             <h1 class="home-title">Bem Vindo a Loja Doces Etecanos</h1>
-            <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere temporibus dignissimos
+            <p class="home-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere temporibus
+                dignissimos
                 ipsam molestiae alias praesentium earum! Molestiae non, maxime accusamus iste, rem, adipisci quasi
                 minima placeat error quidem fugit fuga?</p>
 
@@ -489,6 +490,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Menu Kids Section -->
@@ -520,55 +522,60 @@
     A seção do rodapé contém links e informações na parte inferior da página.
     -->
 
-    <!-- <footer class="main-footer"> -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
+    <footer class="main-footer">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
 
-                <div class="footer-col">
-                    <h4>Proprietária</h4>
-                    <ul>
-                        <li><a href="#">Ingrid Ribeiro</a></li>
+                    <div class="footer-col">
+                        <h4>Proprietária</h4>
+                        <ul>
+                            <li><a href="#">Ingrid Ribeiro</a></li>
 
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
 
-                <div class="footer-col">
-                    <h4>Desenvolvedores</h4>
-                    <ul>
-                        <li><a href="#">Aila Aryam Alves</a></li>
-                        <li><a href="#">Lucas Wagner</a></li>
-                        <li><a href="#">Maria Carolina Almeida</a></li>
+                    <div class="footer-col">
+                        <h4>Desenvolvedores</h4>
+                        <ul>
+                            <li><a href="#">Aila Aryam Alves</a></li>
+                            <li><a href="#">Lucas Wagner</a></li>
+                            <li><a href="#">Maria Carolina Almeida</a></li>
 
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
 
-                <div class="footer-col">
-                    <h4>Localização</h4>
-                    <ul>
-                        <li><a href="#">B. Guedes, Prç. Adelaide Guedes, 1 - Centro, Tatuí - SP, 18270-020</a></li>
+                    <div class="footer-col">
+                        <h4>Localização</h4>
+                        <ul>
+                            <li><a href="#">B. Guedes, Prç. Adelaide Guedes, 1 - Centro, Tatuí - SP, 18270-020</a>
+                            </li>
 
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Horário de funcionmento</h4>
-                    <ul>
-                        <li><a href="#">Quartas-feiras, das 07:00 à meia-noite</a></li>
-
-                    </ul>
-                </div>
-                <!-- <div class="copy">
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Horário de funcionmento</h4>
+                        <ul>
+                            <li><a href="#">
+                            <li>Quinta a Terça-Feira das 7h as meia noite.</li>
+                            </a>
+                            <li><a href="#">
+                            <li>Fechado nas Quartas-Feiras.</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <!-- <div class="copy">
                             &#169; 2024
                         </div> -->
 
+                </div>
             </div>
-        </div>
-        </div>
-        </div>
-    </footer>
+            </div>
+            </div>
+        </footer>
 
-    <!-- Modal Screens -->
-    <!--
+        <!-- Modal Screens -->
+        <!--
     English:
     Modal screens are temporary windows that overlay the main content to display additional information or functionality.
 
@@ -576,17 +583,17 @@
     Telas modais são janelas temporárias que sobrepoem o conteúdo principal para exibir informações ou funcionalidades adicionais.
     -->
 
-    <div class="container-modal">
-        <div id="fade">
-            <div id="modal-login"></div>
-            <div id="modal-registred"></div>
-            <div id="modal-user"></div>
-            <div id="modal-reviews"></div>
-            <div id="modal-database"></div>
+        <div class="container-modal">
+            <div id="fade">
+                <div id="modal-login"></div>
+                <div id="modal-registred"></div>
+                <div id="modal-user"></div>
+                <div id="modal-reviews"></div>
+                <div id="modal-database"></div>
+            </div>
         </div>
-    </div>
 
-    <!--
+        <!--
     Inglês:
     This script contains the main functionality of the application.
 
@@ -594,7 +601,7 @@
     Este script contém a funcionalidade principal da aplicação.
     -->
 
-    <script src="./assents/JavaScript/main.js"></script>
+        <!-- <script src="./assents/JavaScript/main.js"></script> -->
 </body>
 
 </html>

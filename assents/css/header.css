@@ -1,5 +1,5 @@
 .main-header {
-    padding: var(--large-padding) 8%;
+    padding: 1rem;
     position: -webkit-sticky;
     position: sticky;
     height: 8vh;
@@ -109,69 +109,10 @@
     display: none;
 }
 
-/* Mobile menu */
-
-/* Adiciona o ícone de hamburguer para o menu móvel */
-#mobile_menu {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#mobile_menu button {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* Estiliza o ícone de hamburguer */
-#mobile_menu button .hamburger-icon {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Adiciona a animação para o ícone de hamburguer */
-#mobile_menu button .hamburger-icon::before,
-#mobile_menu button .hamburger-icon::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Posiciona as linhas do ícone de hamburguer */
-#mobile_menu button .hamburger-icon::before {
-    top: -10px;
-}
-
-#mobile_menu button .hamburger-icon::after {
-    top: 10px;
-}
-
-/* Animação para transformar o ícone de hamburguer em X */
-#mobile_menu.active button .hamburger-icon {
-    background-color: transparent;
-}
-
-#mobile_menu.active button .hamburger-icon::before {
-    transform: translateY(10px) rotate(45deg);
-}
-
-#mobile_menu.active button .hamburger-icon::after {
-    transform: translateY(-10px) rotate(-45deg);
-}
-
 /* Estilos para telas pequenas (celulares) */
-@media only screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .desktop-menu {
-        display: none; /* Oculta o menu de navegação para desktop */
+        display: none;
     }
 
     .mobile-menu {
@@ -181,7 +122,7 @@
     }
 
     .mobile-menu-list {
-        display: none; /* Oculta a lista de itens do menu de navegação móvel */
+        display: none; 
     }
 
     .mobile-menu-toggle {
@@ -231,42 +172,38 @@
         transform: translateY(-10px) rotate(-45deg);
     }
 
-    /* Exibe a lista de itens do menu de navegação móvel quando o botão de hambúrguer é clicado */
     .mobile-menu-toggle.mobileon + .mobile-menu-list {
         display: flex;
         flex-direction: column;
-        background-color: var(--color-primary); /* Adapte a cor de fundo conforme necessário */
+        background-color: var(--color-primary);
         position: absolute;
-        top: 100%; /* Ajuste conforme necessário */
+        top: 100%; 
         right: 0;
-        width: 100%; /* Ajuste conforme necessário */
-        padding: 20px; /* Ajuste conforme necessário */
+        width: 100%; 
+        padding: 20px;
     }
 
-    /* Estilize os itens do menu de navegação móvel conforme necessário */
     .mobile-menu-toggle.mobileon + .mobile-menu-list .nav-item {
-        margin-bottom: 10px; /* Ajuste conforme necessário */
+        margin-bottom: 10px;
     }
 
     .mobile-menu-toggle.mobileon + .mobile-menu-list .nav-item a {
-        color: #fff; /* Ajuste conforme necessário */
+        color: #fff;
         text-decoration: none;
-        font-size: 18px; /* Ajuste conforme necessário */
+        font-size: 18px;
     }
-
-    /* Adapte estilos conforme necessário para melhorar a aparência e a usabilidade do menu de navegação móvel */
-}
+} */
 
 /* Estilos para telas médias (tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+/* @media screen and (min-width: 601px) and (max-width: 1024px) {
     .main-header {
         padding: var(--medium-padding) 8%;
     }
-}
+} */
 
 /* Estilos para telas grandes (desktops) */
-@media only screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) {
     .main-header {
         padding: var(--large-padding) 8%;
     }
-}
+} */

@@ -1,73 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-    line-height: 1.5;
-    font-family: 'poppins', sans-serif;
-   
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
+.container {
     max-width: 1170px;
     margin: auto;
-    
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.footer{
-    background-color: #F2A7A7;;
-    padding:70px 0 ;
-   
-   
-    
+.footer {
+    background-color: #F2A7A7;
+    ;
+    padding: 70px 0;
 }
 
-.footer-col{
+.footer-col {
     width: 25%;
     padding: 0 15px;
-      /*distancia entre as colunas  */
-  
+    /*distancia entre as colunas  */
 }
 
-.footer-col h4{
+.footer-col h4 {
     font-size: 18px;
     color: rgb(0, 0, 0);
-    text-transform:capitalize;
+    text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 500;
-    position:relative;
-  
-    
+    position: relative;
 }
 
-.footer-col h4::before{
+.footer-col h4::before {
     content: '';
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color:#790707;
+    background-color: #790707;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
 }
 
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.footer-col ul li a{
+.footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
     color: #000000;
@@ -78,8 +61,8 @@ ul{
     transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
-    color:white;
+.footer-col ul li a:hover {
+    color: white;
     padding-left: 8px;
 }
 
@@ -108,26 +91,22 @@ ul{
     font-weight: 100;
 } */
 
-
-@media(max-widht: 767px){
-    .footer-col{
+@media(max-width: 767px) {
+    .footer-col {
         width: 50%;
         margin-bottom: 30px;
-        
     }
-
 }
-@media(max-widht: 767px){
-    .footer-col{
+
+@media(max-width: 767px) {
+    .footer-col {
         width: 50%;
         margin-bottom: 30px;
+    }
 }
 
-}
-
-@media(max-widht: 574px){
-    .footer-col{
+@media(max-width: 574px) {
+    .footer-col {
         width: 100%;
-}
-
+    }
 }

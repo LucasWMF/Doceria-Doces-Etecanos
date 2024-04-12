@@ -1,5 +1,12 @@
 // EventListener's Front
 
+// document.addEventListener("DOMContentLoaded", function() {
+//     document.getElementById("mobile_menu_toggle").addEventListener("click", function() {
+//         this.classList.toggle("mobileon");
+//         document.getElementById("mobile_nav_list").classList.toggle("mobileon");
+//     });
+// });
+
 window.addEventListener('scroll', function () {
     let header = document.querySelector('.main-header');
 
